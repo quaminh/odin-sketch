@@ -12,7 +12,6 @@ body {
     height: 960px;
     max-width: 960px;
     max-height: 960px;
-    border: black 2px solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -20,7 +19,7 @@ body {
 
 .square {
     box-sizing: border-box;
-    border: gray 1px solid;
+    border: #EFEFEF 1px solid;
 }
 
 .resetBtn {
