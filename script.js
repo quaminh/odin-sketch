@@ -1,4 +1,9 @@
 const container = document.querySelector(".container");
+container.addEventListener("mouseover", function (event) {
+    if (event.target.classList.contains("square")) {
+        event.target.style.backgroundColor = "black";
+    }
+});
 
 const MAX_GRID_SIZE = 960; // in pixels
 let gridSquares = 16; // number of squares on one side
@@ -17,7 +22,7 @@ function resetGrid() {
     square.style.height = `${squareSize}px`;
 
     for (let i = 0; i < gridSquares; ++i) {
-        row.appendChild(square.cloneNode());
+        row.appendChild(square.cloneNode(true));
     }
     for (let i = 0; i < gridSquares; ++i) {
         container.appendChild(row.cloneNode(true));
