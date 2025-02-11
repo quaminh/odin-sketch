@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 960px;
+    min-height: 960px;
+    max-width: 960px;
+    max-height: 960px;
+    border: black 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    box-sizing: border-box;
+    border: gray 1px solid;
+}
