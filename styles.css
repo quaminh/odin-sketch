@@ -3,11 +3,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .container {
-    min-width: 960px;
-    min-height: 960px;
+    width: 960px;
+    height: 960px;
     max-width: 960px;
     max-height: 960px;
     border: black 2px solid;
@@ -19,4 +21,13 @@ body {
 .square {
     box-sizing: border-box;
     border: gray 1px solid;
+}
+
+.resetBtn {
+    padding: 8px 32px;
+    font-size: 24px;
+}
+
+.output {
+    color: red;
 }
